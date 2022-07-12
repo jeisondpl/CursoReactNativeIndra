@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 const NavigateStackScreens = () => {
   return (
     <Stack.Navigator
-      //   initialRouteName="View3"
+      // initialRouteName="View3"
       screenOptions={
         {
           // headerShown: true,

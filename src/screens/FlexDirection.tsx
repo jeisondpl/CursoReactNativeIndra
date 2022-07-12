@@ -9,6 +9,7 @@ const FlexDirectionScreens = () => {
       <View style={styles.caja1}></View>
       <View style={styles.caja2}></View>
       <View style={styles.caja3}></View>
+      <View style={styles.caja4}></View>
     </View>
   );
 };
@@ -16,7 +17,9 @@ const FlexDirectionScreens = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row-reverse',
+    // flexDirection: 'column-reverse',
+    flexDirection: 'row',
+
     backgroundColor: color.primary,
   },
   caja1: {
@@ -31,6 +34,11 @@ const styles = StyleSheet.create({
   },
   caja3: {
     backgroundColor: color.quinary,
+    width: 100,
+    height: 100,
+  },
+  caja4: {
+    backgroundColor: color.naranja,
     width: 100,
     height: 100,
   },

@@ -15,7 +15,7 @@ const View2Screens = ({navigation}: Props) => {
           navigation.navigate('View3', {
             name: 'Jeison Diaz',
             nick: 'Viejo Jey',
-            note: 'Pilas con la unidada 3',
+            note: 'Pilas con la unidad 3',
           })
         }
       />

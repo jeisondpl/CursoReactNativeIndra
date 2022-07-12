@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
   caja1: {
     backgroundColor: color.roja,
-    flex: 1,
+    flex: 4,
   },
   caja2: {
     backgroundColor: color.naranja,
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   },
   caja3: {
     backgroundColor: color.verde,
-    flex: 3,
+    flex: 1,
   },
 });
 

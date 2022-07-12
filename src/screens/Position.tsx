@@ -23,12 +23,13 @@ const styles = StyleSheet.create({
     height: 100,
     position: 'absolute',
     bottom: 0,
-    right: 0,
+    // right: 0,
   },
   caja2: {
     backgroundColor: color.tertiary,
     width: 100,
     height: 100,
+    top: 50,
   },
 });
 

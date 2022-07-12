@@ -7,26 +7,40 @@ import {Text, View, StyleSheet} from 'react-native';
 import color from './src/utils/colors';
 import NavigateStackScreens from './src/screens/navigate/NativeStack';
 import NavigateDrawerScreens from './src/screens/navigate/NativeDrawer';
+import Nuevo from './src/screens/Nuevo';
+import TextoPrueba from './src/components/TextoPrueba';
+import Iconos from './src/components/Iconos';
+
+const MyComponents: JSX.Element[] = [
+  <BoxModelScreens />,
+  <PositionScreens />,
+  <FlexBoxScreens />,
+  <FlexDirection />,
+  <NavigateStackScreens />,
+  <NavigateDrawerScreens />,
+  <Nuevo />,
+  <TextoPrueba
+    param1="parametro 1"
+    param2="parametro 2"
+    param3="parametro 3"
+  />,
+  <Iconos />,
+];
 
 const appScreens = () => {
   return (
     <>
-      <View style={styles.container}>
-        {/* <BoxModelScreens /> */}
-        {/* <PositionScreens /> */}
-        {/* <FlexBoxScreens /> */}
-        {/* <FlexDirection /> */}
-        {/* <NavigateStackScreens /> */}
-        <NavigateDrawerScreens />
-      </View>
+      <View style={styles.container}>{MyComponents[8]}</View>
       <View style={styles.containerFoter}>
         <Text style={styles.Titulo}>
-          Capacitación de React Native - Unidad 2
+          Capacitación de React Native - Unidad 3
         </Text>
-        <Text style={styles.subTitulo}>BoxModel</Text>
+        {/* <Text style={styles.subTitulo}>BoxModel</Text>
         <Text style={styles.subTitulo}>Position</Text>
         <Text style={styles.subTitulo}>Flex</Text>
-        <Text style={styles.subTitulo}>Navegaciones</Text>
+        <Text style={styles.subTitulo}>Navegaciones</Text> */}
+        <Text style={styles.subTitulo}>Componentes</Text>
+        <Text style={styles.subTitulo}>Icons</Text>
       </View>
     </>
   );

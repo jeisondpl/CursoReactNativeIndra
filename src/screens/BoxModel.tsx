@@ -11,12 +11,13 @@ import {
 const BoxModelScreens = () => {
   // Dimensions
   // const {width, height} = Dimensions.get('window');
-  // const {width , height } = useWindowDimensions();
+  const {width, height} = useWindowDimensions();
   //   console.log(width, height);
 
   return (
     <View style={styles.container}>
       <View style={styles.caja1}>
+        <Text style={styles.internaText}>{width}</Text>
         <Text style={styles.internaText}>Box con Style</Text>
       </View>
     </View>
@@ -29,16 +30,16 @@ const styles = StyleSheet.create({
   },
   caja1: {
     backgroundColor: '#FAAC6B',
-    width: 250,
-    height: 250,
+    width: 500,
+    height: 500,
   },
   internaText: {
     color: color.white,
     textAlign: 'center',
-    backgroundColor: color.secondary,
+    backgroundColor: color.roja,
     width: '50%',
     height: '50%',
-    padding: 10,
+    padding: 50,
     margin: 10,
     borderWidth: 1,
   },
